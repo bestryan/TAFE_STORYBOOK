@@ -1,0 +1,276 @@
+import { Meta, Source, Canvas, Title, Subtitle } from '@storybook/blocks';
+import tafe from '../assets/TAFE_LOGO_white.png';
+import './design_style.css';
+
+<Meta title='Design/Typography' />
+
+<nav>
+  <img className='logo' src={tafe} />
+  <h1 className='font white'>Typography</h1>
+</nav>
+
+<div className="left-align" >
+
+#### NSW Government uses Public Sans font for all digital products and services to create a distinct but consistent look and feel. Public Sans is the only font to be used for headings and body copy. It is a free font that is available [Google Fonts](https://fonts.google.com/specimen/Public+Sans).
+
+#### As Public Sans is a custom font it's recommended to use Web Safe Font as a fallback when declaring your font stack. The preferred fallback font for the TAFE NSW Design System is Arial.
+
+<Source
+  code={`
+  body {
+    font-family: 'Public Sans', Arial, sans-serif;
+  }`}
+/>
+<br />
+<div className='line'></div>
+<div className='sy-title'>Heading styles</div>
+
+**Weights:** bold (700)
+
+<table className='typo-table'>
+  <tbody>
+    <tr className='left-a'>
+      <th>Example</th>
+      <th>Element</th>
+      <th>Size</th>
+      <th>Line height</th>
+      <th>CSS Code</th>
+    </tr>
+    <tr>
+      <td className='h1-large'>H1</td>
+      <td>H1 large</td>
+      <td>48px (3rem)</td>
+      <td>125%</td>
+      <td>
+        <Source code={`class="h1-large"`} />
+      </td>
+    </tr>
+    <tr>
+      <td className='h1-small'>H1</td>
+      <td>H1 small</td>
+      <td>36px (2.25rem)</td>
+      <td>125%</td>
+      <td><h6>class= "h1-small"</h6></td>
+    </tr>
+    <tr>
+      <td className='h2-large'>H2</td>
+      <td>H2 large</td>
+      <td>32px (2rem)</td>
+      <td>125%</td>
+      <td><h6>class= "h2-large"</h6></td>
+    </tr>
+    <tr>
+      <td className='h2-small'> H2 </td>
+      <td>H2 small</td>
+      <td>28px (1.75rem)</td>
+      <td>125%</td>
+      <td><h6>class= "h2-small"</h6></td>
+    </tr>
+
+    <tr>
+      <td className='h3-large'>H3</td>
+      <td>H3 large</td>
+      <td>24px (1.5rem)</td>
+      <td>133%</td>
+      <td><h6>class= "h3-large"</h6></td>
+    </tr>
+    <tr>
+      <td className='h3-small'>H3</td>
+      <td>H3 small</td>
+      <td>22px (1.375rem)</td>
+      <td>125%</td>
+      <td><h6>class= "h3-small"</h6></td>
+    </tr>
+
+    <tr>
+      <td className='h4-large'>H4</td>
+      <td>H4 large</td>
+      <td>20px (1.25rem)</td>
+      <td>140%</td>
+      <td><h6>class= "h4-large"</h6></td>
+    </tr>
+    <tr>
+      <td className='h4-small'>H4</td>
+      <td>H4 small</td>
+      <td>18px (1.125rem)</td>
+      <td>133%</td>
+      <td><h6>class= "h4-small"</h6></td>
+    </tr>
+    <tr>
+      <td className='h5-lns'>H5</td>
+      <td>H5 large/small</td>
+      <td>16px (1.rem)</td>
+      <td>150%</td>
+      <td><h6>class= "h5-lns"</h6></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<div className='line'></div>
+<div className='sy-title'>Body styles</div>
+
+**Weights:** regular (400)
+
+<table className='typo-table'>
+  <tbody>
+    <tr className='left-a'>
+      <th>Example</th>
+      <th>Element</th>
+      <th>Size</th>
+      <th>Line height</th>
+      <th>CSS Code</th>
+    </tr>
+    <tr>
+      <td className='intro-large'>Intro text</td>
+      <td>Intro large</td>
+      <td>20px (1.25rem)</td>
+      <td>140%</td>
+      <td>
+        <Source code={`class="intro-large"`} />
+      </td>
+    </tr>
+    <tr>
+      <td className='intro-small'>Intro text</td>
+      <td>Intro small</td>
+      <td>18px (1.125rem)</td>
+      <td>133%</td>
+      <td>
+        <h6>class= "intro-small"</h6>
+      </td>
+    </tr>
+    <tr>
+      <td className='text-large'>Body text</td>
+      <td>Large</td>
+      <td>16px (1rem)</td>
+      <td>150%</td>
+      <td>
+        <h6>class= "text-large"</h6>
+      </td>
+    </tr>
+    <tr>
+      <td className='text-medium'>Body text</td>
+      <td>Medium</td>
+      <td>14px (0.875rem)</td>
+      <td>150%</td>
+      <td>
+        <h6>class= "text-medium"</h6>
+      </td>
+    </tr>
+    <tr>
+      <td className='text-small'>Body text</td>
+      <td>Small</td>
+      <td>12px (0.75rem)</td>
+      <td>150%</td>
+      <td>
+        <h6>class= "text-small"</h6>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<div className='line'></div>
+<div className='sy-title'>Links styles</div>
+
+**Weights:** Semibold (600)
+
+<table className='typo-table'>
+  <tbody>
+    <tr className='left-a'>
+      <th>Example</th>
+      <th>Element</th>
+      <th>Size</th>
+      <th>Line height</th>
+      <th>CSS Code</th>
+    </tr>
+    <tr>
+      <td className='text-large link'>Links-text</td>
+      <td>Large</td>
+      <td>16px (1rem)</td>
+      <td>150%</td>
+      <td>
+        <Source code={`class="text-large link"`} />
+      </td>
+    </tr>
+    <tr>
+      <td className='text-medium link'>Links-text</td>
+      <td>Medium</td>
+      <td>14px (0.875rem)</td>
+      <td>150%</td>
+      <td>
+        <h6>class= "text-medium link"</h6>
+      </td>
+    </tr>
+    <tr>
+      <td className='text-small link'>Links-text</td>
+      <td>Small</td>
+      <td>12px (0.75rem)</td>
+      <td>150%</td>
+      <td>
+        <h6>class= "text-small link"</h6>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<br />
+<br />
+<div className='line'></div>
+<div className='sy-title'>Label styles</div>
+
+**Weights:** bold (700), Semibold (600)
+
+<table className='typo-table'>
+  <tbody>
+    <tr className='left-a'>
+      <th>Example</th>
+      <th>Element</th>
+      <th>Size</th>
+      <th>Line height</th>
+      <th>CSS Code</th>
+    </tr>
+    <tr>
+      <td className='pill-text'>Pill</td>
+      <td>Pill</td>
+      <td>14px (0.875rem)</td>
+      <td>100%</td>
+      <td>
+        <Source code={`class="pill-text"`} />
+      </td>
+    </tr>
+    <tr>
+      <td className='attribute-text'>Attribute</td>
+      <td>Attribute</td>
+      <td>14px (0.875rem)</td>
+      <td>100%</td>
+      <td>
+        <h6>class= "attribute-text"</h6>
+      </td>
+    </tr>
+    <tr>
+      <td className='input-text'>Input</td>
+      <td>Input</td>
+      <td>16px (1rem)</td>
+      <td>100%</td>
+      <td>
+        <h6>class= "input-text"</h6>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br />
+<br />
+<br />
+## Usage guidelines
+
+### TBC...
+
+</div>

@@ -1,0 +1,72 @@
+import { Meta } from '@storybook/blocks';
+import banner from './assets/banner.jpg';
+import tafe from './assets/TAFE_LOGO_white.png';
+
+<Meta title='Welcome' />
+
+<nav>
+  <img className='logo' src={tafe} />
+  <h1 className='white style'>Welcome to the TAFE Design System</h1>
+  <h3 className='white'>for developers and designers</h3>
+  <br />
+  <img className='banner' src={banner} />
+</nav>
+
+<div className="left-align">
+### Here you can find our design guidelines, component documentation, and resources for building application with TAFE NSW design system.
+
+---
+
+<br />
+
+### Why have one?
+
+The TAFE Design System is integral to our overarching strategy, as it not only consolidates ICT's user interface design approach but also shapes a software development process, all in alignment with TAFE's core value of putting the customer first, thereby fostering increased collaboration and ensuring consistency.
+
+### When to use? (TBC)
+
+lorem ipsum dolor sit amet, consectetur
+
+### How to use? (TBC)
+
+lorem ipsum dolor sit amet, consectetur
+
+### How we get here? (TBC)
+
+lorem ipsum dolor sit amet, consectetur
+
+</div>
+
+<style>
+  {`
+.font{
+  font-family: 'Public Sans', Arial, sans-serif;
+}
+.style {
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+}
+nav {
+background-color: #373737;
+border-radius: 0.5rem;
+padding: 20px;
+margin-bottom: 2rem;
+padding-left: 1.4rem;
+}
+.left-align{
+padding-left: 1.4rem;
+padding-right: 1.2rem;
+}
+.banner{
+  border-radius: 0.3rem;
+}
+.logo {
+    width: 150px;
+    margin-bottom: 40px;
+}
+.white{
+color: #FFF;
+}
+`}
+</style>
