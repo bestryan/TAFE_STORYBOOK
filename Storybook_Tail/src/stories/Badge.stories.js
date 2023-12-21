@@ -4,9 +4,7 @@ export default {
   title: 'Components/Badge & Notification',
   component: Badge,
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 };
 
 export const Small = {

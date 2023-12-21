@@ -1,7 +1,7 @@
 import List from '../components/List.vue';
 
 export default {
-  title: 'Components/List',
+  title: 'Components/List/List',
   component: List,
   tags: ['autodocs'],
   argTypes: {

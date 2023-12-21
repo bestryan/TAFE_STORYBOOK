@@ -1,19 +1,19 @@
 <template>
-  <div>
-    <button :class="computedClasses">{{ label }}</button>
-    <!-- <button :class="computedClasses" @click="handleClick">{{ label }}</button> -->
-  </div>
+  <button :class="computedClasses">
+    {{ label }}
+  </button>
+  <!-- <button :class="computedClasses" @click="handleClick">{{ label }}</button> -->
 </template>
 
 <script>
 /** Control to change boolean value to disabled button */
 export default {
-  name: 'Button',
   props: {
     primary: Boolean,
     secondary: Boolean,
     light: Boolean,
     dark: Boolean,
+    red: Boolean,
     label: String,
   },
   computed: {
@@ -23,6 +23,7 @@ export default {
         'secondary-button': this.secondary,
         'light-button': this.light,
         'dark-button': this.dark,
+        'red-button': this.red,
       };
     },
   },
@@ -54,7 +55,7 @@ button {
   font-weight: 700;
   line-height: 150%;
   background-color: #165fb4;
-  border: 1px solid #165fb4;
+  border: 2px solid #165fb4;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
     0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -128,7 +129,7 @@ button {
   font-weight: 700;
   line-height: 150%;
   background-color: #676769;
-  border: 1px solid #676769;
+  border: 2px solid #676769;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
     0px 1px 3px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -141,6 +142,25 @@ button {
   box-shadow: 0 0 0 2px #5d97d9;
 }
 .dark-button:active {
+  box-shadow: 0 0 0 2px #5d97d9;
+}
+
+.red-button {
+  padding: 10px 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: #e5143c;
+  border: 2px solid #e5143c;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.red-button:focus {
+  box-shadow: 0 0 0 2px #5d97d9;
+}
+.red-button:active {
   box-shadow: 0 0 0 2px #5d97d9;
 }
 </style>

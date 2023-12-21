@@ -7,10 +7,10 @@
           <div class="heading">{{ heading }}</div>
           <div class="subheading">{{ subheading }}</div>
         </div>
-        <Heart />
+        <Heart v-if="heart_visible" />
       </div>
       <div class="content-content">{{ content }}</div>
-      <div><Button label="Button" primary /></div>
+      <div v-if="button_visible"><Button label="Button" primary /></div>
     </div>
   </div>
 </template>
@@ -24,6 +24,8 @@ export default {
     heading: String,
     subheading: String,
     content: String,
+    button_visible: Boolean,
+    heart_visible: Boolean,
   },
 };
 </script>

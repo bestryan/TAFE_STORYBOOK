@@ -1,5 +1,5 @@
 <template>
-  <div :class="badgeClass" :style="{ background: backgroundColor }">
+  <div :class="badgeClass">
     <div>
       {{ number }}
     </div>
@@ -10,7 +10,6 @@
 export default {
   props: {
     number: { type: Number, required: true },
-    backgroundColor: { type: String, default: 'var(--Teal-100, #73d7bf)' },
   },
   computed: {
     badgeClass() {

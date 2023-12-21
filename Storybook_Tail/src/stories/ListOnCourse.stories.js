@@ -1,7 +1,7 @@
 import ListOnCourse from '../components/ListOnCourse.vue';
 
 export default {
-  title: 'Components/ListOnCourse',
+  title: 'Components/List/ListOnCourse',
   component: ListOnCourse,
   tags: ['autodocs'],
 };

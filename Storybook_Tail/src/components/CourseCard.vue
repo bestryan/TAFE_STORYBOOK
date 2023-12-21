@@ -1,18 +1,18 @@
 <template>
   <div
     :class="[
-      'm-4 border border-neutral-300 shadow-md h-full transform hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease',
+      'border border-neutral-300 shadow-md h-full transform hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ease',
       type,
     ]"
   >
     <div :class="['p-6 border-t-4 border-violet-500', type]">
-      <div class="text-sm font-bold text-gray-800 leading-tight">
+      <div class="text-sm font-bold text-tafe-grey-600 leading-tight mb-1">
         {{ level }}
       </div>
       <div class="block text-xl font-bold leading-tight mb-3">
         {{ subject }}
       </div>
-      <div class="text-base font-bold text-gray-700 mb-4">National Code</div>
+      <div class="text-base font-bold text-tafe-grey-600 mb-4">{{ code }}</div>
       <div class="text-base mb-4">
         {{ content }}
       </div>

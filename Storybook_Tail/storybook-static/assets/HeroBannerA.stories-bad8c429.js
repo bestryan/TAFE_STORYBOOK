@@ -1,0 +1,15 @@
+import{B as y}from"./ButtonIcon-bcb9e3c4.js";import{P as v}from"./Pills-96a44863.js";import{b as l,d as i,e,f as t,t as c,m as H,n as S,o as d,p as x,j as B}from"./vue.esm-bundler-5a9141cb.js";import{_ as w}from"./_plugin-vue_export-helper-c27b6911.js";const k=""+new URL("makeup-3def5f41.jpeg",import.meta.url).href;const h={components:{ButtonIcon:y,Pills:v},props:{styles:String,subheading:String,heading:String,button_visible:Boolean}},A=n=>(x("data-v-251321c3"),n=n(),B(),n),N={class:"pt-6 pb-4 px-4 bg-tafe-grey-700 lg:py-10 lg:pl-12 lg:pr-6 lg:w-1/2"},C={class:"text-base font-bold text-white mt-6"},I={class:"text-5xl font-bold mb-4 text-tafe-aqua-300 mt-4"},T={key:0,class:"mt-6 lg:flex lg:gap-2"},L={class:"hidden xl:block"},j={class:"xl:hidden"},E=A(()=>e("img",{class:"object-cover object-center lg:w-1/2",src:k,alt:"makeup"},null,-1));function F(n,P,s,V,q,D){const f=l("Pills"),a=l("ButtonIcon");return d(),i("div",{class:S(["h-[20em] max-h-full lg:flex",s.styles])},[e("div",N,[t(f,{label:"Enrolment open",type:"green"}),e("div",C,c(s.subheading),1),e("div",I,c(s.heading),1),s.button_visible?(d(),i("div",T,[t(a,{dark:"",label:"Add to shortlist",selectedSvgName:"heart",class:"mb-2 w-full lg:w-auto"}),t(a,{dark:"",label:"Add to question",selectedSvgName:"help",class:"mb-2 w-full lg:w-auto"}),e("div",L,[t(a,{primary:"",label:"Find a location to enrol",selectedSvgName:"find",class:"mb-2 w-full lg:w-auto"})])])):H("",!0),e("div",j,[t(a,{primary:"",label:"Find a location to enrol",selectedSvgName:"find",class:"mb-2 w-full lg:w-auto"})])]),E],2)}const O=w(h,[["render",F],["__scopeId","data-v-251321c3"]]);h.__docgenInfo={exportName:"default",displayName:"HeroBannerA",description:"",tags:{},props:[{name:"styles",type:{name:"string"}},{name:"subheading",type:{name:"string"}},{name:"heading",type:{name:"string"}},{name:"button_visible",type:{name:"boolean"}}],sourceFiles:["/Users/ryan/Documents/GitHub/TAFE_STORYBOOK/Storybook_Tail/src/components/HeroBannerA.vue"]};const K={title:"Components/Hero Banner/Banner A",component:O,argTypes:{styles:{options:["right","left"],control:{type:"radio"}}}},o={args:{styles:"left",subheading:"Subheading / H4 / Tagline",heading:"Heading H1 Large",button_visible:!0}},r={args:{styles:"right",subheading:"Subheading / H4 / Tagline",heading:"Heading H1 Large",button_visible:!0}};var g,m,p;o.parameters={...o.parameters,docs:{...(g=o.parameters)==null?void 0:g.docs,source:{originalSource:`{
+  args: {
+    styles: 'left',
+    subheading: 'Subheading / H4 / Tagline',
+    heading: 'Heading H1 Large',
+    button_visible: true
+  }
+}`,...(p=(m=o.parameters)==null?void 0:m.docs)==null?void 0:p.source}}};var u,_,b;r.parameters={...r.parameters,docs:{...(u=r.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  args: {
+    styles: 'right',
+    subheading: 'Subheading / H4 / Tagline',
+    heading: 'Heading H1 Large',
+    button_visible: true
+  }
+}`,...(b=(_=r.parameters)==null?void 0:_.docs)==null?void 0:b.source}}};const Y=["Content_Left","Content_right"];export{o as Content_Left,r as Content_right,Y as __namedExportsOrder,K as default};
